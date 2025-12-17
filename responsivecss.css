@@ -1,0 +1,261 @@
+/* =====================================================
+   GLOBAL RESPONSIVE FIXES (ALL SCREENS)
+===================================================== */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* =====================================================
+   LARGE DESKTOP / 4K (min-width: 1600px)
+===================================================== */
+@media (min-width: 1600px) {
+
+  .hero-left,
+  .hero-right img {
+    height: 800px;
+  }
+
+  .luxury-text {
+    font-size: 64px;
+  }
+
+  .luxury-text-1 {
+    font-size: 48px;
+  }
+
+  .gallery-left img {
+    height: 700px;
+  }
+
+  .product-card {
+    width: 320px;
+  }
+
+  .footer-container {
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
+/* =====================================================
+   DESKTOP / LAPTOP (1200px – 1599px)
+===================================================== */
+@media (max-width: 1599px) {
+
+  .hero-left,
+  .hero-right img {
+    height: 650px;
+  }
+
+  .luxury-text {
+    font-size: 52px;
+  }
+
+  .gallery-left img {
+    height: 550px;
+  }
+}
+
+/* =====================================================
+   TABLET LANDSCAPE (992px – 1199px)
+===================================================== */
+@media (max-width: 1199px) {
+
+  .middle img {
+    width: 180px;
+  }
+
+  .hero-section,
+  .winter-love,
+  .gallery-section,
+  .ethios {
+    flex-direction: column;
+  }
+
+  .hero-left,
+  .hero-right img,
+  .hero-left-1,
+  .hero-right-1 {
+    height: 450px;
+  }
+
+  .product-row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+}
+
+/* =====================================================
+   TABLET PORTRAIT (768px – 991px)
+===================================================== */
+@media (max-width: 991px) {
+
+  .upper {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .luxury-text {
+    font-size: 40px;
+  }
+
+  .gallery-left img {
+    height: 400px;
+  }
+
+  .gallery-right {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =====================================================
+   MOBILE LARGE (576px – 767px)
+===================================================== */
+@media (max-width: 767px) {
+
+  .middle {
+    flex-direction: column;
+    height: auto;
+    gap: 12px;
+  }
+
+  .search-box {
+    width: 90%;
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-left,
+  .hero-right img {
+    height: 380px;
+  }
+
+  .luxury-text {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .hero-btn,
+  .hero-btn-1,
+  .hero-btn-2 {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .product-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 92%;
+  }
+
+  .gallery-right {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-right img {
+    height: 200px;
+  }
+
+  .ethios {
+    text-align: center;
+  }
+
+  .left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE (≤575px)
+===================================================== */
+@media (max-width: 575px) {
+
+  .upper {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .luxury-text {
+    font-size: 28px;
+  }
+
+  .luxury-text-1 {
+    font-size: 22px;
+  }
+
+  .hero-left,
+  .hero-right img,
+  .hero-left-1,
+  .hero-right-1 {
+    height: 300px;
+  }
+
+  .hero-btn,
+  .hero-btn-1,
+  .hero-btn-2 {
+    width: 90%;
+  }
+
+  .gallery-left img {
+    height: 260px;
+  }
+
+  .last {
+    font-size: 12px;
+  }
+}
