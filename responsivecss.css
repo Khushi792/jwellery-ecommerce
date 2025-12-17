@@ -1,61 +1,58 @@
+@media (max-width: 767px) {
 
-/* =====================================================
-   RESPONSIVE MEDIA QUERIES
-===================================================== */
+  /* Top bar */
+  .upper {
+    font-size: 12px;
+    letter-spacing: 1px;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 8px;
+  }
 
-/* ---------- TABLET ---------- */
-@media (max-width: 991px) {
-
+  /* Middle */
   .middle {
     flex-direction: column;
     height: auto;
-    gap: 10px;
+    padding: 10px 0;
   }
 
+  .middle img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .search-box {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  /* Navigation */
   nav ul {
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 15px;
   }
 
-  .hero-section,
-  .gallery-section {
+  ul li a {
+    font-size: 16px;
+  }
+
+  /* Hero */
+  .hero-section {
     flex-direction: column;
   }
 
-  .hero-left,
-  .hero-right img {
-    min-height: 450px;
+  .hero-left {
+    height: 350px;
   }
-   .hero-right img {
-  display: none;
-   }
-  .gallery-left img {
-    height: 400px;
-  }
-}
 
-/* ---------- MOBILE ---------- */
-@media (max-width: 767px) {
-
-  /* Hide hero image */
   .hero-right {
     display: none;
   }
 
-  /* Hero becomes single column */
-  .hero-section {
-    min-height: auto;
-  }
-
-  .hero-left {
-    min-height: 70vh;
-    padding: 30px 20px;
-    align-items: center;
-    text-align: center;
-  }
-
   .luxury-text {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .subtitle {
@@ -63,49 +60,170 @@
   }
 
   .hero-btn,
-  .hero-btn-1 {
-    width: 90%;
+  .hero-btn-1,
+  .hero-btn-2 {
     font-size: 14px;
+    padding: 10px 20px;
+    margin-left: 0;
   }
 
+  /* Products */
+  .product-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-title {
+    padding-right: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  /* Gallery */
   .gallery-section {
-    padding: 30px;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .gallery-left img {
+    height: auto;
   }
 
   .gallery-right {
     grid-template-columns: 1fr;
   }
 
-  .product-card {
-    width: 90%;
+  /* Winter Love */
+  .winter-love {
+    flex-direction: column;
   }
 
+  .hero-left-1,
+  .hero-right-1 {
+    height: 300px;
+  }
+
+  /* Ethios */
+  .ethios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .right {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Features */
+  .features {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* Footer */
   .footer-container {
     flex-direction: column;
   }
-}
 
-/* ---------- SMALL MOBILE ---------- */
-@media (max-width: 575px) {
-
-  .upper {
-    font-size: 13px;
+  .footer-left,
+  .footer-right {
+    width: 100%;
   }
 
-  nav ul {
+  .footer-right {
     flex-direction: column;
+    gap: 25px;
+  }
+
+  /* Future section */
+  .features1 {
+    grid-template-columns: 1fr;
+  }
+
+  .future-content h1 {
+    font-size: 28px;
+  }
+}
+
+/* ===================== TABLET ===================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .middle img {
+    width: 220px;
+  }
+
+  .hero-left,
+  .hero-right img {
+    height: 500px;
   }
 
   .luxury-text {
-    font-size: 26px;
+    font-size: 40px;
   }
 
-  .hero-left {
-    min-height: 60vh;
+  .product-row {
+    flex-wrap: wrap;
   }
-   .hero-right img {
-  display: none;
-   }
+
+  .gallery-section {
+    padding: 40px;
+  }
+
+  .gallery-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .winter-love {
+    gap: 20px;
+  }
+
+  .features {
+    gap: 60px;
+  }
+
+  .footer-container {
+    gap: 30px;
+  }
+
+  .features1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+/* ===================== LAPTOP ===================== */
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+  .hero-left,
+  .hero-right img {
+    height: 650px;
+  }
+
+  .luxury-text {
+    font-size: 48px;
+  }
+
+  .gallery-left img {
+    height: 550px;
+  }
+}
+
+/* ===================== LARGE SCREENS ===================== */
+@media (min-width: 1441px) {
+
+  .hero-section,
+  .gallery-section,
+  .footer-container {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .luxury-text {
+    font-size: 56px;
+  }
+}
 
