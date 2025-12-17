@@ -4,8 +4,7 @@
   .upper {
     font-size: 12px;
     letter-spacing: 1px;
-    justify-content: center;
-    text-align: center;
+   
     height: auto;
     padding: 8px;
   }
@@ -226,4 +225,5 @@
     font-size: 56px;
   }
 }
+
 
