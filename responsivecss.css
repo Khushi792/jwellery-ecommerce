@@ -249,7 +249,9 @@ body {
   .hero-right-1 {
     min-height: 300px;
   }
-
+ .hero-right {
+    display: none;
+ }
   .hero-btn,
   .hero-btn-1,
   .hero-btn-2 {
@@ -264,4 +266,5 @@ body {
     font-size: 12px;
   }
 }
+
 
