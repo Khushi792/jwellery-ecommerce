@@ -150,13 +150,9 @@ body {
     width: 90%;
   }
 
-  .hero-section {
-    flex-direction: column;
-  }
-
   .hero-left,
   .hero-right img {
-    height: 380px;
+    visibility: hidden;
   }
 
   .luxury-text {
