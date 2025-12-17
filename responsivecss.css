@@ -159,6 +159,9 @@ body {
     min-height: 350px;
   }
 
+  .hero-right {
+    display: none;
+  }
   .luxury-text {
     font-size: 34px;
   }
@@ -261,3 +264,4 @@ body {
     font-size: 12px;
   }
 }
+
