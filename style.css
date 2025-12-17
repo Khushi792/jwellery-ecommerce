@@ -92,7 +92,7 @@ ul li a:hover {
     display: flex;
     align-items:center;
     justify-content: space-between;
-    min-height: 85vh;
+  
     background-color: #101111;
     height: fit-content;
 }
@@ -617,3 +617,4 @@ gap: 30px;
   line-height: 45px;
   margin: 0 auto 10px;
 }
+
